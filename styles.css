@@ -1,3 +1,15 @@
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+
 .message {
-    align-items: center;
-}
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    /* Add width and height properties as needed */
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+  }
