@@ -1,4 +1,5 @@
-# My website
+# Jenkins Pipeline project
+testing AWS Lambda and AW API calls
 
 To run the checks, first install NodeJS.
 
