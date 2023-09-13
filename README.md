@@ -1,5 +1,5 @@
 # Jenkins CI/CD Pipeline
-Testing AWS Lambda and AW API calls and githib webhooks to create a working CI/CD pipe.
+Testing an AWS Lambda with an AWS API using github webhooks to create a working CI/CD pipe.
 
 Nodejs to test the validity in Jenkins.
 
