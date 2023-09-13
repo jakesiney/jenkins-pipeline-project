@@ -3,36 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+
     <title>Hello</title>
   </head>
   <body>
-    <script>
-      async function handleClick() {
-        let response = await fetch("https://YOUR_LAMBDA_URL_HERE");
-        let text = await response.text();
-        document.getElementById("response").innerHTML = text;
-        document.getElementById("img").src =
-          "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9";
-      }
-    </script>
-    <div class="message">
+    <div>
       <br><br><br><br>
       <h1>
         Hello <span id="response"
-          >Jake! What happens when you click on the button below?</span
+        >Jake! What happens when you click on the button below?</span
         >
       </h1>
-
+      
       <button onclick="handleClick()" type="button">Click me</button><br>
       <br><br>
       <img
-        id="img"
-        width="1000"
-        height="1000"
-        alt="A beautiful monkey"
-        src="https://images.unsplash.com/photo-1529247833802-700f53170380"
+      id="img"
+      width="1000"
+      height="1000"
+      alt="A beautiful monkey"
+      src="https://images.unsplash.com/photo-1529247833802-700f53170380"
       >
+      <script>
+        async function handleClick() {
+          let response = await fetch("https://YOUR_LAMBDA_URL_HERE");
+          let text = await response.text();
+          document.getElementById("response").innerHTML = text;
+          document.getElementById("img").src =
+            "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9";
+        }
+      </script>
     </div>
   </body>
 </html>
