@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
-    <style>.centered-div {
+    <style>
+      body {
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+  }
+
+  .centered-div {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      width: 100vw;
+      min-height: 100vh; /* Ensure the div takes at least the full viewport height */
       flex-direction: column;
-    }
+      padding-top: 20px;
+  }
     </style>
   </head>
   <body>
     <div class="centered-div">
       <br><br><br><br>
       <h1>
-        Hello <span id="response"
-        >Jake! What happens when you click on the button below?</span
-        >
+        Hello <span id="response">Jake! What happens when you click on the button below?</span>
       </h1>
       <button onclick="handleClick()" type="button">Click me</button><br>
       <br><br>
