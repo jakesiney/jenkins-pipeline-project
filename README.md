@@ -1,16 +1,6 @@
-# Jenkins Pipeline project
-testing AWS Lambda and AW API calls
+# Jenkins CI/CD Pipeline
+Testing AWS Lambda and AW API calls and githib webhooks to create a working CI/CD pipe.
 
-To run the checks, first install NodeJS.
-
-Then run:
-
-```shell 
-; npm install
-; npm run check
-```
-
-These checks will fail at first, to give you something to fix to make your
-pipeline work.
+Nodejs to test the validity in Jenkins.
 
 
