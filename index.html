@@ -33,7 +33,7 @@
       >
       <script>
         async function handleClick() {
-          let response = await fetch("https://YOUR_LAMBDA_URL_HERE");
+          let response = await fetch("https://dqb78orhak.execute-api.eu-west-2.amazonaws.com/stageone");
           let text = await response.text();
           document.getElementById("response").innerHTML = text;
           document.getElementById("img").src =
